@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
+    <!-- <script>
         const age = '18';
         if(age===18){
             console.log("vous êtes majeur");
@@ -13,9 +13,22 @@
             console.log("vous êtes mineur");
         }
         
-    </script>
+    </script> -->
 </head>
 <body>
+    <script>
+        function canDrive(age,pays){
+            if (
+                (age>=18 && pays=='FR') ||
+                (age>=16 && pays=='US')
+            ) {
+                return true;
+            }
+            return false;
+            
+        }
+        console.log(canDrive(18,'FR'));
+    </script>
     
 </body>
 </html>
