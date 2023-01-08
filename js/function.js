@@ -10,3 +10,9 @@ function canDrive(age,pays){
     return false;
 }
 
+// this is a function that greet someone using his name
+
+function greeting(name) {
+    console.log('bonjour '.name)
+    
+}
